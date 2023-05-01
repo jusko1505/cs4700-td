@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class LivesUI : MonoBehaviour
 {
-    public Text livesText;
+    public TMPro.TextMeshProUGUI livesText;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,6 +15,6 @@ public class LivesUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        livesText.text = PlayerResources.Lives + " LIVES";
+        livesText.text = PlayerResources.Lives + " HP";
     }
 }

@@ -5,17 +5,12 @@ using UnityEngine.UI;
 
 public class GoldUI : MonoBehaviour
 {
-
-    public Text goldText;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
+    public TMPro.TextMeshProUGUI goldText;
+    //public Text goldText;
+   
     // Update is called once per frame
     void Update()
     {
-        goldText.text = "$" + PlayerResources.Gold;
+        goldText.text = "$" + PlayerResources.Gold.ToString();
     }
 }

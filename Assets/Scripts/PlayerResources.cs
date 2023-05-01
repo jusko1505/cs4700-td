@@ -12,6 +12,7 @@ public class PlayerResources : MonoBehaviour
 
     void Start(){
         Gold = startingGold;
+        Lives = startingLives;
         
     }
 }

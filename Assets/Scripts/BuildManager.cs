@@ -17,9 +17,9 @@ public class BuildManager : MonoBehaviour
     public GameObject Tower1;
     public GameObject Tower2;
 
-    private GameObject towerToBuild;
+    private TowerPrefabAndCosts towerToBuild;
 
-    public GameObject SetTowerToBuild(TowerPrefabAndCosts tower){
+    public void SetTowerToBuild(TowerPrefabAndCosts tower){
         towerToBuild = tower;
     }
 
@@ -28,6 +28,7 @@ public class BuildManager : MonoBehaviour
     }
 
 
+/*
     public void BuildTowerOnTile(Tile tile){
 
         if(PlayerResources.Gold < towerToBuild.cost){
@@ -40,7 +41,7 @@ public class BuildManager : MonoBehaviour
 
         Debug.Log("Tower Built, Remaining Gold" + PlayerResources.Gold);
     }
-
+*/
 
     
 
