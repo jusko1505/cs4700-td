@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class BuildManager : MonoBehaviour
 {
-    /*singleton that places towers on valid tiles*/
+    /*singleton that places towers on valid tiles
+        check out shoptscript to view its implementation */
     public static BuildManager single;
+    
+    /* represents the currently selected tower from the shop */
+    private TowerPrefabAndCosts towerToBuild;
 
     void Awake(){
         if(single != null){
@@ -15,21 +19,17 @@ public class BuildManager : MonoBehaviour
         single = this;
     }
 
-    /* add game objects, and attach prefabs through unity whenever you want a new tower*/
-    public GameObject Tower1;
-    public GameObject Tower2;
-
-    private TowerPrefabAndCosts towerToBuild;
-
     public void SetTowerToBuild(TowerPrefabAndCosts tower){
         towerToBuild = tower;
     }
 
+    // check if there is a non null "blueprint" for a tower selected.
     public bool allowedToBuild(){
         return towerToBuild != null;
     }
 
-
+    /* an implementation taken from the video for placing the selected tower 
+    on a valid tile and subtracting the money from the player's balance.*/
 /*
     public void BuildTowerOnTile(Tile tile){
 
@@ -46,15 +46,6 @@ public class BuildManager : MonoBehaviour
 */
 
     
-
-
-
-
-
-
-
-
-
 
 
     //public bool allowedToBuild {get { return towerToBuild != null } };
