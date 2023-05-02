@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuPanel : MonoBehaviour
 {
-    public string firstLevel = "FirstLevel";
+    public string levelSelectSceneName = "LevelSelect";
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +19,7 @@ public class MainMenuPanel : MonoBehaviour
     }
 
     public void StartGame(){
-        SceneManager.LoadScene(firstLevel);
+        SceneManager.LoadScene(levelSelectSceneName);
         Debug.Log("Start");
     }
 

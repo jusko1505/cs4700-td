@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
+    public string mainMenuScene = "MainMenu";
     public GameObject pausePanel;
     // Start is called before the first frame update
     void Start()
@@ -49,5 +50,6 @@ public class PauseMenu : MonoBehaviour
 
     public void OnMainMenu(){
         Debug.Log("Going to menu");
+        SceneManager.LoadScene(mainMenuScene);
     }
 }
