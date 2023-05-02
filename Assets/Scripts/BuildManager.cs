@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BuildManager : MonoBehaviour
 {
+    /*singleton that places towers on valid tiles*/
     public static BuildManager single;
 
     void Awake(){
@@ -14,6 +15,7 @@ public class BuildManager : MonoBehaviour
         single = this;
     }
 
+    /* add game objects, and attach prefabs through unity whenever you want a new tower*/
     public GameObject Tower1;
     public GameObject Tower2;
 

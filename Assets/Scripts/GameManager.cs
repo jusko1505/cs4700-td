@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+
+    /* Decides what screens should be displayed: like gameover, and level complete (does not exist)*/
     public static bool gameOver;
 
     public GameObject gameOverUI;

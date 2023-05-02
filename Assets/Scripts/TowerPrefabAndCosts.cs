@@ -5,6 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public class TowerPrefabAndCosts
 {
+    /* Contains prefab and cost of a specific tower (represents a tower)*/
 
     public GameObject prefab;
     public int cost;

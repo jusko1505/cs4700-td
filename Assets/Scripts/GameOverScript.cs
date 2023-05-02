@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GameOverScript : MonoBehaviour
 {
+    /* script that should contain what the buttons on the main menu screen should do */
     // Start is called before the first frame update
     void Start()
     {
