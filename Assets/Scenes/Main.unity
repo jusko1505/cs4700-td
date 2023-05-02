@@ -1417,6 +1417,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a88c420ec9531745b18ce0adce1b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainMenuScene: MainMenu
 --- !u!1 &484846798
 GameObject:
   m_ObjectHideFlags: 0
@@ -1426,7 +1427,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 484846799}
-  - component: {fileID: 484846800}
   m_Layer: 5
   m_Name: PauseMenu
   m_TagString: Untagged
@@ -1460,18 +1460,6 @@ RectTransform:
   m_AnchoredPosition: {x: -112, y: 0}
   m_SizeDelta: {x: -245.8565, y: -179}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &484846800
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 484846798}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a88c420ec9531745b18ce0adce1b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &527329416
 GameObject:
   m_ObjectHideFlags: 0
@@ -1620,6 +1608,7 @@ GameObject:
   - component: {fileID: 532078090}
   - component: {fileID: 532078093}
   - component: {fileID: 532078094}
+  - component: {fileID: 532078095}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1654,8 +1643,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dba7b9e1836f85441840e2605b00036e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Tower1: {fileID: 0}
-  Tower2: {fileID: 0}
 --- !u!114 &532078091
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1710,6 +1697,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firstLevel: FirstLevel
+--- !u!114 &532078095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532078088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a88c420ec9531745b18ce0adce1b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainMenuScene: MainMenu
 --- !u!1 &545607131
 GameObject:
   m_ObjectHideFlags: 0
@@ -4234,7 +4234,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1968484619}
-  - component: {fileID: 1968484620}
   m_Layer: 5
   m_Name: GameOver
   m_TagString: Untagged
@@ -4267,18 +4266,6 @@ RectTransform:
   m_AnchoredPosition: {x: -65, y: 20}
   m_SizeDelta: {x: -245.8565, y: -179}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1968484620
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1968484618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a88c420ec9531745b18ce0adce1b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1982491127
 GameObject:
   m_ObjectHideFlags: 0
