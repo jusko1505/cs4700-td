@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuPanel : MonoBehaviour
 {
-    public string levelSelectSceneName = "LevelSelect";
+    public string levelSelectSceneName = "newLevelSelect";
     // Start is called before the first frame update
     void Start()
     {
